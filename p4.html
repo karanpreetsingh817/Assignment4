@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="formbox">
+      <h1 style="text-align:center">Registration Form</h1>
+      <input type="checkbox">
+      <form  id="form" action="/api/form" method="post">
+        <fieldset style="border-radius: 10px ; padding-left:20px">
+          <legend>Personal Details</legend>
+          <table>
+            <colgroup>
+              <col span="1" id="one" />
+              <col span="1" id="two" />
+              <tr id="first">
+                <td class="flength">
+                  <label for="fnames" >First Name </label>
+                </td>
+                <td class="flength">
+                    <label for="fnames" >Last Name </label>
+                  </td>
+              </tr>
+              <tr >
+                <td>
+                  <input
+                    class="length input-field"
+                    type="text"
+                    name="fname"
+                    id="fnames"
+                    placeholder="First Name"
+                  />
+                </td>
+                <td>
+                    <input
+                      class="length input-field"
+                      type="text"
+                      name="lname"
+                      id="lnames"
+                      placeholder="Last Name"
+                    />
+                  </td>
+              </tr>
+             
+
+<!-- 
+              <tr>
+                <td  colspan:"4" class="flength">Gender</td>
+              </tr>
+              <tr> -->
+                <td  colspan="4">
+                    <fieldset style=" padding-left:10px;margin-left:20px ; border:2px solid rgba(82, 78, 78, 0.678) ;border-radius:5px">
+                        <legend>Gender</legend>
+
+                  <input style="margin-left:20px ;margin-top:10px" type="radio" name="gender">Male
+                   <input style="margin-left:20px; margin-top:10px" type="radio" name="gender">Female 
+                   <input style="margin-left:20px; margin-top:10px" type="radio" name="gender">Others
+                </fieldset>
+                </td>
+              </tr>
+
+              <!-- <tr>
+                
+                <td colspan="4" class="flength">
+                  <label for="emails">E-mail  </label></td>
+              </tr> -->
+              <tr>
+                <td colspan="4">
+                  <div style="margin-left:20px;margin-top:10px">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <input style="width:80%"
+                    class=" input-field"
+                    type="email"
+                    name="email"
+                    id="emails"
+                    placeholder="E-mail"
+                  />
+                </div>
+                </td>
+              </tr>
+              <tr><td  colspan="4" class="flength">
+                <label for="addresss">Address  </label>
+              </td></tr>
+              <tr>
+                
+                <td  colspan="4">
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="address"
+                    id="addresss"
+                    value="sec 71 wembley society, Mohali"
+                  />
+                </td>
+              </tr>
+            <tr>                <td  colspan="4" class="flength"><label for="dob">Date Of Birth</label></td></tr>
+              <tr>
+
+                <td  colspan="4">
+                  <input
+                    class=" input-field"
+                    type="date"
+                    name="dob"
+                    id="dobs"
+                  />
+                </td>
+              </tr>
+              <tr> <td  colspan="4" class="flength">
+                <label for="mobiles">Mobile Number</label>
+              </td></tr>
+              <tr>
+               
+                <td  colspan="4">
+                  <input onchange
+                    class=" input-field"
+                    type="number"
+                    name="mobile"
+                    id="mobiles"
+                    placeholder="98774-XXXXX"
+                  />
+                </td>
+              </tr>
+              
+              <tr>
+                <td colspan="4" class="flength">
+                <label for="mobiles">Select Your Countery</label>
+            </td>
+              </tr>
+              <tr>
+               
+                <td  colspan="4">
+                  
+                        <input type="text" list="cn"  class=" input-field">
+                        <datalist id="cn">
+                            <option value="INDIA">INDIA</option>
+                            <option value="CHINA">CHINA</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">U.K</option>
+                            <option value="RUSSIA">RUSSIA</option>
+                        </datalist>
+                    
+                </td>
+                
+              </tr>
+              <tr> 
+                <td  colspan="4" >
+                <input class="buttons input-field "type="Submit">
+              </td>
+              
+            </tr>
+             
+            </colgroup>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+
+    
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 10px 25% 10px 25%;
+      background-image: url(karan.jpg);
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .formbox {
+      width: 100%;
+      height: auto;
+      padding:20px;
+
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.671);
+    }
+    .flength {
+      padding-left: 20px;
+      padding-top:20px;
+    }
+    .radio {
+      margin:10%;
+    }
+    #lnames{
+        
+        width:230px;
+    }
+    #fnames{
+       width:230px;
+    
+    }
+    
+    
+
+    .input-field {
+        padding-left:15px;
+      height: 30px;
+      margin-left: 20px;
+      width:500px;
+      border:none;
+      outline:none;
+      
+      border-bottom:2px solid white;
+      background-color: transparent;
+      
+
+
+      
+
+      border-radius: 5px;
+    }
+   .buttons{
+    width:96%;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: rgba(63, 61, 59, 0.619);
+    color: white;
+    padding-left: 0px;
+   }
+   .buttons:hover{
+    background-color: rgba(255, 255, 255, 0.765);
+    color:black;
+   }
+   
+  </style>
+</html>

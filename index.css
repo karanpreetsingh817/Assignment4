@@ -1,0 +1,34 @@
+.card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 80%;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: cursive;
+    color: #328b63;
+  
+  }
+  
+  .card p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #3c66d9;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .card:hover{
+    border: 4px solid rgb(75, 220, 82);
+  }
